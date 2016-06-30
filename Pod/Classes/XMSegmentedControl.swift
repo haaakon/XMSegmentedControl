@@ -387,7 +387,7 @@ public class XMSegmentedControl: UIView {
             let tabBarSections:Int = segmentContent.text.count
             let positionWidth = startingPositionAndWidth(totalWidth, distribution: itemWidthDistribution, segmentCount: tabBarSections, selectedIndex: selectedSegment)
             addHighlightView(startingPosition: positionWidth.startingPosition, width: positionWidth.sectionWidth)
-            addSegments(startingPosition: positionWidth.startingPosition, sections: tabBarSections, width: positionWidth.sectionWidth, height: self.frame.height)
+            addSegments(startingPosition: 0, sections: tabBarSections, width: positionWidth.sectionWidth, height: self.frame.height)
         }
     }
     
